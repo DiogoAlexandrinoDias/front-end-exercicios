@@ -1,3 +1,36 @@
+const inputNota =  document.getElementById("nota");
+const resultado =  document.getElementById("result");
+const message =  document.getElementById("message");
+
+
+function resultadoNotaClick(event){
+    event.preventDefault() 
+    if(inputNota.value >= 6  ){
+        resultado.innerHTML =  "Aprovado"
+        resultado.style =  "color: green"
+    }
+    else if(inputNota.value <= 5){
+        resultado.innerHTML =  "Reprovado"     
+        resultado.style =  "color: red"   
+    }
+
+
+    //validação
+
+    if (inputNota.value == ""){
+        message.style.display = "block" 
+        
+
+        return false 
+    } 
+        message.style.display = "none"
+        inputNota.value = ""
+}
+
+
+/* 
+
+
 
 // Entrada de dados
 let xp = Number(prompt("Quantos anos de experiência você tem?"));
@@ -49,3 +82,4 @@ if (totalPontos >= 1 && totalPontos <= 49) {
 } else if (totalPontos === 0) {
     alert("Aparentemente você não tem nenhum ponto...");
 }
+ */
