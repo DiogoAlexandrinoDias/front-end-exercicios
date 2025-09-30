@@ -1,17 +1,48 @@
 body { 
     font-family: Arial, sans-serif; 
     padding: 20px;
+    background-color: aqua;
+}
+#BOX{
+    border: #000000 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 5px #000000;
+    background-color: white;
+    
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    
+    justify-content: center;
+
 }
 
-input, button {
+input{
     padding: 10px;
     margin: 5px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: black 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    transform: scale(1.030);
+    background-color: rgb(1, 235, 71);
+    
 }
 
 .item {
@@ -21,12 +52,13 @@ input, button {
 }
 
 .disponivel {
-    background-color: #f0fff0;
+    background-color: #00ff00;
 }
 
 .reservado {
-    background-color: #fff8dc;
+    background-color: #ffcc00;
 }
+
 
 #mensagem {
     text-align: center;
